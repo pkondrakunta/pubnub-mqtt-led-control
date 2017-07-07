@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 from pubnub import Pubnub
-pubnub= Pubnub(publish_key='demo',subscribe_key='sub-c-e240c026-5c1a-11e7-8944-0619f8945a4f')
+pubnub= Pubnub(publish_key='demo',subscribe_key='subscribe_key')
 def callback(message,channel):
 	print (message)
 	GPIO.setmode(GPIO.BCM)
